@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "rplus",
+  "version": "${version}",
+
+  "name": "Redstone Plus",
+  "description": "Adding new Redstone items to Minecraft!",
+  "authors": [
+    "Flytre"
+  ],
+  "contact": {
+    "homepage": "https://flytre.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/rplus/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.flytre.rplus.RedstonePlus"
+    ],
+    "client" : [
+      "net.flytre.rplus.RedstonePlusClient"
+    ]
+  },
+  "mixins": [
+    "rplus.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  }
+}
